@@ -27,4 +27,4 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Code Style
-      run: dotnet format .\MemeSafe.Server.sln --verify-no-changes
+      run: dotnet format --verify-no-changes
