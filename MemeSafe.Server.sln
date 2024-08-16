@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MemeSafe.Web.Api", "src\MemeSafe.Web.Api\MemeSafe.Web.Api.csproj", "{B371C0ED-50AB-48DD-A42E-CF8023046853}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{28BA826D-9E7C-4FD9-BE01-18CB7B0756AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{03457049-9E08-4DEB-A809-EFBFB50A649E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{929386E4-39AD-4BD0-9819-DC738A429BB5}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{D5B5B33A-7D0D-4375-88BF-A4A2B339D51E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemeSafe.Data.Entity", "src\Common\MemeSafe.Data.Entity\MemeSafe.Data.Entity.csproj", "{DF17F823-2D24-4A4E-9041-DBD0DCBEF99C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B371C0ED-50AB-48DD-A42E-CF8023046853}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B371C0ED-50AB-48DD-A42E-CF8023046853}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B371C0ED-50AB-48DD-A42E-CF8023046853}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B371C0ED-50AB-48DD-A42E-CF8023046853}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF17F823-2D24-4A4E-9041-DBD0DCBEF99C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF17F823-2D24-4A4E-9041-DBD0DCBEF99C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF17F823-2D24-4A4E-9041-DBD0DCBEF99C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF17F823-2D24-4A4E-9041-DBD0DCBEF99C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B371C0ED-50AB-48DD-A42E-CF8023046853} = {28BA826D-9E7C-4FD9-BE01-18CB7B0756AA}
+		{D5B5B33A-7D0D-4375-88BF-A4A2B339D51E} = {28BA826D-9E7C-4FD9-BE01-18CB7B0756AA}
+		{DF17F823-2D24-4A4E-9041-DBD0DCBEF99C} = {D5B5B33A-7D0D-4375-88BF-A4A2B339D51E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {913FC578-B57F-4EB4-9C3B-A0C1AC680239}
+	EndGlobalSection
+EndGlobal
