@@ -288,8 +288,8 @@ dotnet_naming_style.prefix_type_parameters_with_t_style.capitalization = pascal_
 dotnet_naming_style.prefix_type_parameters_with_t_style.required_prefix = T
 # _ prefix
 dotnet_naming_style.starts_with__downslash.required_prefix = _
-dotnet_naming_style.starts_with__downslash.required_suffix = 
-dotnet_naming_style.starts_with__downslash.word_separator = 
+dotnet_naming_style.starts_with__downslash.required_suffix =
+dotnet_naming_style.starts_with__downslash.word_separator =
 dotnet_naming_style.starts_with__downslash.capitalization = camel_case
 # disallowed_style - Anything that has this style applied is marked as disallowed
 dotnet_naming_style.disallowed_style.capitalization  = pascal_case
@@ -433,20 +433,79 @@ dotnet_naming_rule.parameters_rule.style = camel_case_style
 dotnet_naming_rule.parameters_rule.severity = warning
 
 ##########################################
-# Всякая дичь (временно отключено)
+# .Net 7 analyzers (https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md#release-70)
 ##########################################
+
+# Работа с культурой при вызове ToUpper() или ToLower()
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1311
+dotnet_diagnostic.CA1311.severity = warning
+
+# Блокировка потока в асинхронном коде
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1849
+dotnet_diagnostic.CA1849.severity = warning
+
+# Использоване HashData вместо создания экземпляра HashAlgorithm
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1850
+dotnet_diagnostic.CA1850.severity = warning
+
+# Possible multiple enumerations of IEnumerable collection
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1851
+dotnet_diagnostic.CA1851.severity = none
+
+# Seal internal types
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1852
+dotnet_diagnostic.CA1852.severity = suggestion
+
+# Unnecessary call to 'Dictionary.ContainsKey(key)'
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1853
+dotnet_diagnostic.CA1853.severity = warning
+
+# Prefer the IDictionary.TryGetValue(TKey, out TValue) method
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1854
+dotnet_diagnostic.CA1854.severity = warning
+
+# Use Span<T>.Clear() instead of Span<T>.Fill()
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1855
+dotnet_diagnostic.CA1855.severity = warning
+
+# ThreadStatic fields should not use inline initialization
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2019
+dotnet_diagnostic.CA2019.severity = warning
+
+# Prevent behavioral change caused by built-in operators of IntPtr/UIntPtr
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2020
+dotnet_diagnostic.CA2020.severity = warning
+
+# Ensure ThreadStatic is only used with static fields
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2259
+dotnet_diagnostic.CA2259.severity = warning
+
+# Implement generic math interfaces correctly
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2260
+dotnet_diagnostic.CA2260.severity = warning
+
+# Implement generic math interfaces correctly
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2260
+dotnet_diagnostic.CA2260.severity = warning
+
+##########################################
+# Прочие правила
+##########################################
+
+# Проверка на null может быть упрощена
+dotnet_diagnostic.IDE0270.severity = none
 
 # Использование LoggerMessage для оптимизации логера
 # https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1848
-dotnet_diagnostic.CA1848.severity = none 
+dotnet_diagnostic.CA1848.severity = none
 
 # Культура
 # https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1304
 # https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1305
 # https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1310
-dotnet_diagnostic.CA1304.severity = none 
-dotnet_diagnostic.CA1305.severity = none 
-dotnet_diagnostic.CA1310.severity = none 
+dotnet_diagnostic.CA1304.severity = none
+dotnet_diagnostic.CA1305.severity = none
+dotnet_diagnostic.CA1310.severity = none
 
 # Статические методы
 # https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1822
