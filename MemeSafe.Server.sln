@@ -22,6 +22,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MemeSafe.Data.Entity", "src
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemeSafe.Web.Test", "test\MemeSafe.Web.Test\MemeSafe.Web.Test.csproj", "{0127E9ED-4B6B-47CB-898F-DAB302B7BBA5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemeSafe.Extensions", "src\Common\MemeSafe.Extensions\MemeSafe.Extensions.csproj", "{75635844-649C-4BF9-8FED-35053D5DFAD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemeSafe.Infrastructure", "src\Common\MemeSafe.Infrastructure\MemeSafe.Infrastructure.csproj", "{46EF2488-F8D9-4F4A-A1D1-AF7A2341AA84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +44,14 @@ Global
 		{0127E9ED-4B6B-47CB-898F-DAB302B7BBA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0127E9ED-4B6B-47CB-898F-DAB302B7BBA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0127E9ED-4B6B-47CB-898F-DAB302B7BBA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75635844-649C-4BF9-8FED-35053D5DFAD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75635844-649C-4BF9-8FED-35053D5DFAD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75635844-649C-4BF9-8FED-35053D5DFAD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75635844-649C-4BF9-8FED-35053D5DFAD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46EF2488-F8D9-4F4A-A1D1-AF7A2341AA84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46EF2488-F8D9-4F4A-A1D1-AF7A2341AA84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46EF2488-F8D9-4F4A-A1D1-AF7A2341AA84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46EF2488-F8D9-4F4A-A1D1-AF7A2341AA84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +61,8 @@ Global
 		{D5B5B33A-7D0D-4375-88BF-A4A2B339D51E} = {28BA826D-9E7C-4FD9-BE01-18CB7B0756AA}
 		{DF17F823-2D24-4A4E-9041-DBD0DCBEF99C} = {D5B5B33A-7D0D-4375-88BF-A4A2B339D51E}
 		{0127E9ED-4B6B-47CB-898F-DAB302B7BBA5} = {03457049-9E08-4DEB-A809-EFBFB50A649E}
+		{75635844-649C-4BF9-8FED-35053D5DFAD5} = {D5B5B33A-7D0D-4375-88BF-A4A2B339D51E}
+		{46EF2488-F8D9-4F4A-A1D1-AF7A2341AA84} = {D5B5B33A-7D0D-4375-88BF-A4A2B339D51E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {913FC578-B57F-4EB4-9C3B-A0C1AC680239}
