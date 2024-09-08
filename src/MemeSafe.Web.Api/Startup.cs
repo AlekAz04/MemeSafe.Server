@@ -1,20 +1,29 @@
 using Serilog;
-using MemeSafe.Infrastructure;
+
 
 namespace MemeSafe.Web.Api;
 
 public class Startup
 {
-    public IConfiguration? Configuration { get; }
+    private readonly IConfiguration _configuration;
+
+    public Startup(IConfiguration configuration)
+    {
+        _configuration = configuration;
+    }
 
     public void ConfigureServices(IServiceCollection services)
     {
         services.AddControllers();
         services.AddEndpointsApiExplorer();
 
-        services.AddMemeSafeInfrastructure();
+        services.AddAutoMapper(typeof(AutoMapperEntityProfile));
+
+
+        services.AddDbContext<DataContext>();
 
         var log = Log.Logger = new LoggerConfiguration()
+            .ReadFrom.Configuration(_configuration)
             .MinimumLevel.Debug()
             .WriteTo.Console()
             .CreateLogger();
