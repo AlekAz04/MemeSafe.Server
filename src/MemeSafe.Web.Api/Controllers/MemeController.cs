@@ -1,4 +1,5 @@
 ﻿using MemeSafe.Data.Entity;
+using MemeSafe.MemeServices;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MemeSafe.Web.Api;
@@ -16,8 +17,8 @@ public class MemeController : ControllerBase
     [HttpPost("api/memes")]
     public async Task<IActionResult> AddMeme([FromBody] MemeCreateDto addMeme, CancellationToken cancellationToken)
     {
-        var meme = await _service.AddMeme(addMeme, cancellationToken);
-        return Ok(meme);
+        await _service.AddMeme(addMeme, cancellationToken);
+        return Ok();
     }
 
     [HttpGet("api/memes/{id:guid}")]

@@ -1,6 +1,6 @@
-﻿namespace MemeSafe.Data.Entity.EntityConfiguration;
+﻿namespace MemeSafe.Data.EntityConfiguration;
 
-public class EntityConfigurationAssemblyMarker
-{
-
-}
+/// <summary>
+/// Маркер сборки
+/// </summary>
+public class EntityConfigurationAssemblyMarker { }

@@ -1,3 +1,6 @@
+using MemeSafe.AutoMapper;
+using MemeSafe.Data.Infrastructure;
+using MemeSafe.Services.AspNetCore;
 using Serilog;
 
 
@@ -17,14 +20,13 @@ public class Startup
         services.AddControllers();
         services.AddEndpointsApiExplorer();
 
-        services.AddAutoMapper(typeof(AutoMapperEntityProfile));
-
+        services.AddMemeSafeAutoMapperConfiguration()
+            .AddMemeSafeServices();
 
         services.AddDbContext<DataContext>();
 
         var log = Log.Logger = new LoggerConfiguration()
             .ReadFrom.Configuration(_configuration)
-            .MinimumLevel.Debug()
             .WriteTo.Console()
             .CreateLogger();
 
@@ -35,12 +37,9 @@ public class Startup
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {
-        if (env.IsDevelopment())
-        {
-            app.UseSwagger();
-            app.UseSwaggerUI();
-        }
-        app.UseHttpsRedirection();
+        app.UseSwagger();
+        app.UseSwaggerUI();
+
         app.UseRouting();
         app.UseEndpoints(x => x.MapControllers());
     }

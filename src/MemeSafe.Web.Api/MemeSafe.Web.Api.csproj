@@ -9,24 +9,28 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.7">
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.8">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.7">
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.8">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.8" />
     <PackageReference Include="Serilog" Version="4.0.1" />
     <PackageReference Include="Serilog.AspNetCore" Version="8.0.2" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Common\AutoMapper\MemeSafe.AutoMapper\MemeSafe.AutoMapper.csproj" />
     <ProjectReference Include="..\Common\Data\MemeSafe.Data.EntityConfiguration\MemeSafe.Data.EntityConfiguration.csproj" />
     <ProjectReference Include="..\Common\Data\MemeSafe.Data.Entity\MemeSafe.Data.Entity.csproj" />
+    <ProjectReference Include="..\Common\Data\MemeSafe.Data.Infrastructure\MemeSafe.Data.Infrastructure.csproj" />
+    <ProjectReference Include="..\Common\Logic\MemeSafe.MemeServices\MemeSafe.MemeServices.csproj" />
+    <ProjectReference Include="..\Common\Logic\MemeSafe.Services.AspNetCore\MemeSafe.Services.AspNetCore.csproj" />
   </ItemGroup>
 
 </Project>

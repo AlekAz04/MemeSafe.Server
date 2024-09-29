@@ -1,16 +1,37 @@
 ﻿namespace MemeSafe.Data.Entity;
 
-public class MemeShowDTO
+/// <summary>
+/// ДТО возвращаемое с сервера
+/// </summary>
+public class MemeShowDto
 {
-        public Guid Id { get; set; }
+    /// <summary>
+    /// Идентификатор
+    /// </summary>
+    public Guid Id { get; set; }
 
-        public string Name { get; set; } = null!;
+    /// <summary>
+    /// Название
+    /// </summary>
+    public string Name { get; set; } = null!;
 
-        public string Description { get; set; } = null!;
+    /// <summary>
+    /// Описание
+    /// </summary>
+    public string Description { get; set; } = null!;
 
-        public Guid AuthorId { get; set; } = Guid.Empty;
+    /// <summary>
+    /// Идентификатор автора
+    /// </summary>
+    public Guid AuthorId { get; set; } = Guid.Empty;
 
-        public DateTimeOffset CreatedDate { get; set; }
+    /// <summary>
+    /// Дата создания
+    /// </summary>
+    public DateTimeOffset CreatedDate { get; set; }
 
-        public DateTimeOffset ModifiedDate { get; set; }
+    /// <summary>
+    /// Дата обновления
+    /// </summary>
+    public DateTimeOffset ModifiedDate { get; set; }
 }

@@ -3,10 +3,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace MemeSafe.Web.Api.Migrations
+namespace MemeSafe.Data.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class Initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -18,6 +18,7 @@ namespace MemeSafe.Web.Api.Migrations
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
                     Name = table.Column<string>(type: "text", nullable: false),
                     Description = table.Column<string>(type: "text", nullable: false),
+                    FileFullPath = table.Column<string>(type: "text", nullable: true),
                     AuthorId = table.Column<Guid>(type: "uuid", nullable: false),
                     CreatedDate = table.Column<DateTimeOffset>(type: "timestamp with time zone", nullable: false),
                     ModifiedDate = table.Column<DateTimeOffset>(type: "timestamp with time zone", nullable: false)
