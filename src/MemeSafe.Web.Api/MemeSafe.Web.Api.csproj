@@ -26,7 +26,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Common\AutoMapper\MemeSafe.AutoMapper\MemeSafe.AutoMapper.csproj" />
-    <ProjectReference Include="..\Common\Data\MemeSafe.Data.EntityConfiguration\MemeSafe.Data.EntityConfiguration.csproj" />
     <ProjectReference Include="..\Common\Data\MemeSafe.Data.Entity\MemeSafe.Data.Entity.csproj" />
     <ProjectReference Include="..\Common\Data\MemeSafe.Data.Infrastructure\MemeSafe.Data.Infrastructure.csproj" />
     <ProjectReference Include="..\Common\Logic\MemeSafe.MemeServices\MemeSafe.MemeServices.csproj" />

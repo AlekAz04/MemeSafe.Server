@@ -1,4 +1,4 @@
-﻿using MemeSafe.MemeServices;
+using MemeSafe.MemeServices;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace MemeSafe.Services.AspNetCore;

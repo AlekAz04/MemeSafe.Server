@@ -1,4 +1,4 @@
-﻿namespace MemeSafe.Data.Entity;
+namespace MemeSafe.Data.Entity;
 
 /// <summary>
 /// ДТО возвращаемое с сервера

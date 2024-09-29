@@ -1,4 +1,4 @@
-﻿using MemeSafe.Data.Entity;
+using MemeSafe.Data.Entity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

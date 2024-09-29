@@ -1,4 +1,4 @@
-﻿using MemeSafe.Web.Api;
+using MemeSafe.Web.Api;
 using Microsoft.AspNetCore.Mvc.Testing;
 
 namespace MemeSafe.Web.Test;

@@ -1,4 +1,4 @@
-﻿namespace MemeSafe.Data.EntityConfiguration;
+namespace MemeSafe.Data.EntityConfiguration;
 
 /// <summary>
 /// Маркер сборки

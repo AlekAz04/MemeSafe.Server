@@ -1,4 +1,4 @@
-﻿using AutoMapper;
+using AutoMapper;
 using MemeSafe.Data.Entity;
 
 namespace MemeSafe.AutoMapper;

@@ -1,9 +1,9 @@
-﻿ using AutoMapper;
- using MemeSafe.Data.Entity;
- using MemeSafe.Data.Infrastructure;
- using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using MemeSafe.Data.Entity;
+using MemeSafe.Data.Infrastructure;
+using Microsoft.EntityFrameworkCore;
 
- namespace MemeSafe.MemeServices;
+namespace MemeSafe.MemeServices;
 
  /// <summary>
  /// Сервис сущности <see cref="Meme"/>
