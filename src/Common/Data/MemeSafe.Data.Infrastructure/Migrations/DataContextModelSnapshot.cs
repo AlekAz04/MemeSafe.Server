@@ -38,7 +38,8 @@ namespace MemeSafe.Data.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("FileFullPath")
+                    b.Property<string>("ImageInfo")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTimeOffset>("ModifiedDate")

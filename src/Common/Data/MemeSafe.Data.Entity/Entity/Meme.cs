@@ -21,9 +21,9 @@ public class Meme
     public string Description { get; set; } = null!;
 
     /// <summary>
-    /// Полный путь к файлу
+    /// Индормация о картике
     /// </summary>
-    public string? FileFullPath { get; set; }
+    public ImageInfo ImageInfo { get; set; } = null!;
 
     /// <summary>
     /// Идентификатор автора

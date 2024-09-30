@@ -26,6 +26,11 @@ public class MemeShowDto
     public Guid AuthorId { get; set; } = Guid.Empty;
 
     /// <summary>
+    /// Картика
+    /// </summary>
+    public Image Image { get; set; } = null!;
+
+    /// <summary>
     /// Дата создания
     /// </summary>
     public DateTimeOffset CreatedDate { get; set; }

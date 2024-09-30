@@ -1,3 +1,4 @@
+
 namespace MemeSafe.Data.Entity;
 
 /// <summary>
@@ -14,4 +15,9 @@ public class MemeCreateDto
     /// Описание
     /// </summary>
     public string Description { get; set; } = null!;
+
+    /// <summary>
+    /// Изображение
+    /// </summary>
+    public Image Image { get; set; } = null!;
 }

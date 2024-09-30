@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace MemeSafe.Data.Infrastructure.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240929152334_Initial")]
+    [Migration("20240930191602_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -41,7 +41,8 @@ namespace MemeSafe.Data.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("FileFullPath")
+                    b.Property<string>("ImageInfo")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTimeOffset>("ModifiedDate")
