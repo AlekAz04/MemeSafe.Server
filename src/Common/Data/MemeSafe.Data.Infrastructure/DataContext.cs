@@ -7,16 +7,10 @@ namespace MemeSafe.Data.Infrastructure;
 /// <summary>
 /// Контекст к базе данных
 /// </summary>
-public class DataContext : DbContext
+public class DataContext(DbContextOptions<DataContext> options, IConfiguration configuration) : DbContext(options)
 {
     /// <inheritdoc cref="IConfiguration"/>
-    private readonly IConfiguration _configuration;
-
-    public DataContext(DbContextOptions<DataContext> options, IConfiguration configuration) : base(options)
-    {
-        _configuration = configuration;
-    }
-
+    private readonly IConfiguration _configuration = configuration;
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

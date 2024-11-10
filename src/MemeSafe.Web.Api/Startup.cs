@@ -6,14 +6,9 @@ using Serilog;
 
 namespace MemeSafe.Web.Api;
 
-public class Startup
+public class Startup(IConfiguration configuration)
 {
-    private readonly IConfiguration _configuration;
-
-    public Startup(IConfiguration configuration)
-    {
-        _configuration = configuration;
-    }
+    private readonly IConfiguration _configuration = configuration;
 
     public void ConfigureServices(IServiceCollection services)
     {

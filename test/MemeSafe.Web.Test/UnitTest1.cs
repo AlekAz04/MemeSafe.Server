@@ -1,13 +1,8 @@
 namespace MemeSafe.Web.Test;
 
-public class UnitTest1 : IClassFixture<MemeSafeWebApplicationFactory>
+public class UnitTest1(MemeSafeWebApplicationFactory memeSafeWebApplicationFactory) : IClassFixture<MemeSafeWebApplicationFactory>
 {
-    private readonly MemeSafeWebApplicationFactory _memeSafeWebApplicationFactory;
-
-    public UnitTest1(MemeSafeWebApplicationFactory memeSafeWebApplicationFactory)
-    {
-        _memeSafeWebApplicationFactory = memeSafeWebApplicationFactory;
-    }
+    private readonly MemeSafeWebApplicationFactory _memeSafeWebApplicationFactory = memeSafeWebApplicationFactory;
 
     [Fact]
     public void Test1()

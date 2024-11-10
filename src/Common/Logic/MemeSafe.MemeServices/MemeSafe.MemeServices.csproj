@@ -8,6 +8,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\Data\MemeSafe.Data.Infrastructure\MemeSafe.Data.Infrastructure.csproj" />
+      <ProjectReference Include="..\..\MemeSafe.Extensions\MemeSafe.Extensions.csproj" />
     </ItemGroup>
 
     <ItemGroup>

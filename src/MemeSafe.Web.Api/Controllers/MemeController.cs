@@ -5,14 +5,9 @@ using Microsoft.AspNetCore.Mvc;
 namespace MemeSafe.Web.Api;
 
 [ApiController]
-public class MemeController : ControllerBase
+public class MemeController(MemeService service) : ControllerBase
 {
-    private readonly MemeService _service;
-
-    public MemeController(MemeService service)
-    {
-        _service = service;
-    }
+    private readonly MemeService _service = service;
 
     [HttpPost("api/memes")]
     public async Task<IActionResult> AddMeme([FromBody] MemeCreateDto addMeme, CancellationToken cancellationToken)

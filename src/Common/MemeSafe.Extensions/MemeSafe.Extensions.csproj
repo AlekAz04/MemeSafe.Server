@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Data\MemeSafe.Data.Entity\MemeSafe.Data.Entity.csproj" />
+  </ItemGroup>
+
 </Project>

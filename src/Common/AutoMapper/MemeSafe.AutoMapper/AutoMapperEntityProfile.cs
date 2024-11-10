@@ -12,7 +12,7 @@ public class AutoMapperEntityProfile : Profile
     {
         CreateMap<Meme, MemeShowDto>()
             .ForMember(x => x.Image,
-                opt => opt.MapFrom(src => new Image(){Info = src.ImageInfo, Base64String = ""}));
+                opt => opt.MapFrom(src => new Image() { Info = src.ImageInfo, Base64String = "" }));
 
         CreateMap<MemeCreateDto, Meme>()
             .ForMember(x => x.CreatedDate, opt => opt.MapFrom(src => DateTimeOffset.UtcNow))
