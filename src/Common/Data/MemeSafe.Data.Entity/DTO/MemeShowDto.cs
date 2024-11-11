@@ -26,7 +26,7 @@ public class MemeShowDto
     public Guid AuthorId { get; set; } = Guid.Empty;
 
     /// <summary>
-    /// Картика
+    /// Картинка
     /// </summary>
     public Image Image { get; set; } = null!;
 

@@ -1,4 +1,4 @@
-﻿using AutoMapper;
+using AutoMapper;
 using MemeSafe.Data.Entity;
 using MemeSafe.Data.Infrastructure;
 using MemeSafe.Extensions;
@@ -50,8 +50,7 @@ public class MemeService(DataContext context, IMapper mapper)
 
         var addMeme = _mapper.Map<Meme>(createDto);
 
-        var meme = await _context
-            .Set<Meme>()
+        await _context.Set<Meme>()
             .AddAsync(addMeme, cancellationToken);
 
         await _context.SaveChangesAsync(cancellationToken);

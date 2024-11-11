@@ -11,7 +11,7 @@ public static class ImageExtensions
     /// <param name="token">Токен отмены запроса</param>
     public static async Task<Image> SaveImage(this Image image, CancellationToken token)
     {
-        var path = Path.Combine(Directory.GetCurrentDirectory(), "Memes");
+        string path = Path.Combine(Directory.GetCurrentDirectory(), "Memes");
 
         if (!Directory.Exists(path))
         {

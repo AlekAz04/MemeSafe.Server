@@ -41,6 +41,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemeSafe.AutoMapper", "src\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemeSafe.Services.AspNetCore", "src\Common\Logic\MemeSafe.Services.AspNetCore\MemeSafe.Services.AspNetCore.csproj", "{C922C1E8-25B9-4422-9D89-63A9F914D41A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authentication", "Authentication", "{2774C558-DAE6-4AC0-8189-F54BE6719E23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemeSafe.Authentication.AspNetCore", "src\Authentication\MemeSafe.Authentication.AspNetCore\MemeSafe.Authentication.AspNetCore.csproj", "{D740173C-41A9-4E1F-B980-9AC44E5CC2B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemeSafe.Common", "src\Common\MemeSafe.Common\MemeSafe.Common.csproj", "{8071C8E2-B5B5-484A-A83C-68455A1CBB5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +89,14 @@ Global
 		{C922C1E8-25B9-4422-9D89-63A9F914D41A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C922C1E8-25B9-4422-9D89-63A9F914D41A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C922C1E8-25B9-4422-9D89-63A9F914D41A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D740173C-41A9-4E1F-B980-9AC44E5CC2B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D740173C-41A9-4E1F-B980-9AC44E5CC2B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D740173C-41A9-4E1F-B980-9AC44E5CC2B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D740173C-41A9-4E1F-B980-9AC44E5CC2B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8071C8E2-B5B5-484A-A83C-68455A1CBB5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8071C8E2-B5B5-484A-A83C-68455A1CBB5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8071C8E2-B5B5-484A-A83C-68455A1CBB5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8071C8E2-B5B5-484A-A83C-68455A1CBB5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -101,6 +115,9 @@ Global
 		{846D340F-31A5-41D9-BDB9-4563D7500C82} = {D5B5B33A-7D0D-4375-88BF-A4A2B339D51E}
 		{CE90D008-3FEB-4330-B152-A81F77E42C01} = {846D340F-31A5-41D9-BDB9-4563D7500C82}
 		{C922C1E8-25B9-4422-9D89-63A9F914D41A} = {A843C55E-AE44-4A8D-98D5-BA5B6968CECD}
+		{2774C558-DAE6-4AC0-8189-F54BE6719E23} = {28BA826D-9E7C-4FD9-BE01-18CB7B0756AA}
+		{D740173C-41A9-4E1F-B980-9AC44E5CC2B4} = {2774C558-DAE6-4AC0-8189-F54BE6719E23}
+		{8071C8E2-B5B5-484A-A83C-68455A1CBB5B} = {D5B5B33A-7D0D-4375-88BF-A4A2B339D51E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {913FC578-B57F-4EB4-9C3B-A0C1AC680239}

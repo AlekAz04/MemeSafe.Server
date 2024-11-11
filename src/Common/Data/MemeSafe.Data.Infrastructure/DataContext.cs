@@ -1,4 +1,4 @@
-﻿using MemeSafe.Data.EntityConfiguration;
+using MemeSafe.Data.EntityConfiguration;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 

@@ -1,4 +1,4 @@
-﻿using MemeSafe.Data.Entity;
+using MemeSafe.Data.Entity;
 using MemeSafe.MemeServices;
 using Microsoft.AspNetCore.Mvc;
 
