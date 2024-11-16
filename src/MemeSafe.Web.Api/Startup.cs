@@ -15,7 +15,7 @@ public class Startup(IConfiguration configuration)
         services
             .AddMemeSafeAutoMapperConfiguration()
             .AddMemeSafeServices()
-            .AddMemeSafeAuthentication()
+            .AddMemeSafeAuthentication(configuration)
             .AddMemeSafeSwaggerConfiguration()
             .AddMemeSafeLoggingService(configuration);
 
