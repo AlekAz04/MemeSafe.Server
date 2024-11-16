@@ -6,7 +6,7 @@ namespace MemeSafe.Data.Entity;
 public class Image
 {
     /// <inheritdoc cref="ImageInfo"/>
-    public ImageInfo Info { get; set; }
+    public ImageInfo? Info { get; set; }
 
     /// <summary>
     /// Изображение в Base64

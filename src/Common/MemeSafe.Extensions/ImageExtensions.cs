@@ -1,3 +1,4 @@
+using MemeSafe.Common;
 using MemeSafe.Data.Entity;
 
 namespace MemeSafe.Extensions;
@@ -16,6 +17,11 @@ public static class ImageExtensions
         if (!Directory.Exists(path))
         {
             Directory.CreateDirectory(path);
+        }
+
+        if (image.Info is null)
+        {
+            throw new CommonErrorException($"{nameof(image.Info)} is null");
         }
 
         string imageFullName = $"{image.Info.FileName}_{Guid.NewGuid()}.{image.Info.FileExtention}";
